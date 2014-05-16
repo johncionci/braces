@@ -1,6 +1,13 @@
 // @file Layout Styles
 
-/* 2.1 Root Elements */
+/**
+ * Table Of Contents ( layout.scss ):
+ *
+ * 1.0 - Root Elemnets
+ * 2.0 - Structure Elements
+ */
+
+/* 1.0 Root Elements */
 html {
 	font-size: $base-font-size;
 	-webkit-font-smoothing: antialiased;
@@ -15,10 +22,7 @@ body {
 	height: 100%;
 }
 
-/* 2.2 Header */
-@import "_header";
-
-/* 2.3 Structure */
+/* 2.0 Structure Elements */
 #page {
 	margin: 0 auto;
 	width: 90%;
@@ -35,6 +39,3 @@ body {
 		width: 30%;
 	}
 }
-
-/* 2.4 Footer */
-@import "_footer";

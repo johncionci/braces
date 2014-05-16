@@ -1,18 +1,27 @@
 // @file Typography Styles
 
+/**
+ * Table Of Contents ( typography.scss ):
+ *
+ * 1.0 - Typography
+ * 2.0 - Elements
+ */
+
+/**
+ * 1.0 - Typography
+ */
 body,
 button,
 input,
 select,
 textarea {
-	color: $base-color;
-	font-family: $base-font-stack;
-	line-height: $base-line-height;
+	color: #404040;
+	font-family: sans-serif;
+	line-height: 1.5;
 	@include rem(font-size, 1.6);
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	margin: $heading-margin;
 }
 h1,
 h1 a {
@@ -53,7 +62,6 @@ h6 {
 	@include rem(font-size, 1.6);
 }
 p {
-	line-height: $text-element-line-height;
 	margin-bottom: 1.5em;
 	.entry-summary & {
 
@@ -115,4 +123,59 @@ small {
 }
 big {
 	font-size: 125%;
+}
+
+/**
+ * 2.0 - Elements
+ */
+a {
+	color: royalblue;
+}
+a:visited {
+	color: purple;
+}
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 1.5em 1.5em;
+}
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+figure {
+	margin: 0;
+}
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+th {
+	font-weight: bold;
 }

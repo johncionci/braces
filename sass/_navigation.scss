@@ -1,19 +1,12 @@
 // @file Navigation Styles
 
-/* 5.1 Links */
-a {
-	color: royalblue;
-}
-a:visited {
-	color: purple;
-}
-a:hover,
-a:focus,
-a:active {
-	color: midnightblue;
-}
+/**
+ * Table Of Contents ( navigation.scss ):
+ *
+ * 1.0 - Menus
+ */
 
-/* 5.2 Menus */
+/* 1.0 Menus */
 .main-navigation {
 	clear: both;
 	display: block;

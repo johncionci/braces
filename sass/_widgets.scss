@@ -3,24 +3,47 @@
  */
 
 /**
- * Global Widget Styles
+ * Table Of Contents ( widgets.scss ):
+ *
+ * 1.0 - Global
+ * 2.0 - Archives
+ * 	2.1 - List
+ * 	2.2 - Dropdown
+ * 3.0 - Calendar
+ * 4.0 - Categories
+ * 	4.1 - List
+ * 	4.2 - Dropdown
+ * 5.0 - Pages
+ * 6.0 - Meta
+ * 7.0 - Recent Comments
+ * 8.0 - Recent Entries
+ * 9.0 - RSS
+ * 10.0 - Search
+ * 11.0 - Text
+ * 12.0 - Tag Cloud
+ * 13.0 - Nav Menu
  */
+
+/* 1.0 Global Widget Styles */
 .widget {
+	margin: 0 0 1em 0;
 	.widget-title {
 
 	}
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
 }
 
-/**
- * Widget Archive
- */
+/* 2.0 Widget Archive */
 .widget_archive {
 	.widget-title {
 
 	}
 }
 
-/* List */
+/* 2.1 List */
 .widget_archive {
 	ul {
 		li {
@@ -31,7 +54,7 @@
 	}
 }
 
-/* Dropdown */
+/* 2.2 Dropdown */
 .widget_archive {
 	select {
 		option {
@@ -40,9 +63,7 @@
 	}
 }
 
-/**
- * Widget Calendar
- */
+/* 3.0 Widget Calendar */
 .widget_calendar {
 	.widget-title {
 
@@ -86,16 +107,14 @@
 	}
 }
 
-/**
- * Widget Categories
- */
+/* 4.0 Widget Categories */
 .widget_categories {
 	.widget-title {
 
 	}
 }
 
-/* List */
+/* 4.1 List */
 .widget_categories {
 	ul {
 		li {
@@ -109,7 +128,7 @@
 	}
 }
 
-/* Dropdown */
+/* 4.2 Dropdown */
 .widget_categories {
 	select {
 		option {
@@ -118,9 +137,7 @@
 	}
 }
 
-/**
- * Widget Pages
- */
+/* 5.0 Widget Pages */
 .widget_pages {
 	.widget-title {
 
@@ -140,9 +157,7 @@
 	}
 }
 
-/**
- * Widget Meta
- */
+/* 6.0 Widget Meta */
 .widget_meta {
 	.widget-title {
 
@@ -159,9 +174,7 @@
 	}
 }
 
-/**
- * Widget Recent Comments
- */
+/* 7.0 Widget Recent Comments */
 .widget_recent_comments {
 	.widget-title {
 
@@ -178,9 +191,7 @@
 	}
 }
 
-/**
- * Widget Recent Entries
- */
+/* 8.0 Widget Recent Entries */
 .widget_recent_entries {
 	.widget-title {
 
@@ -197,9 +208,7 @@
 	}
 }
 
-/**
- * Widget RSS
- */
+/* 9.0 Widget RSS */
 .widget_rss {
 	.widget-title {
 
@@ -225,9 +234,7 @@
 	}
 }
 
-/**
- * Widget Search
- */
+/* 10.0 Widget Search */
 .widget_search {
 	.widget-title {
 
@@ -248,9 +255,7 @@
 	}
 }
 
-/**
- * Widget Text
- */
+/* 11.0 Widget Text */
 .widget_text {
 	.widget-title {
 
@@ -265,9 +270,7 @@
 	}
 }
 
-/**
- * Widget Tag Cloud
- */
+/* 12.0 Widget Tag Cloud */
 .widget_tag_cloud {
 	.widget-title {
 
@@ -280,9 +283,7 @@
 	}
 }
 
-/**
- * Widget Nav Menu
- */
+/* 13.0 Widget Nav Menu */
 .widget_nav_menu {
 	.widget-title {
 

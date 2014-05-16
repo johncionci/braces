@@ -18,7 +18,6 @@
 
 // CSS preprocess logic
 	@import "preprocess/_rem";
-	@import "preprocess/settings";
 	@import "preprocess/_mixins";
 	@import "preprocess/_extends";
 	@import "preprocess/_placeholders";
@@ -27,3 +26,21 @@
 
 	// Global Styles
 	@import "_global";
+
+	// Layout Styles
+	@import "_layout";
+
+	// Typography Styles
+	@import "_typography";
+
+	// Content Styles
+	@import "_content";
+
+	// Navigation Styles
+	@import "_navigation";
+
+	// Widget Styles
+	@import "_widgets";
+
+	// Print Styles
+	//@import "_print";

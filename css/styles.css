@@ -1,30 +1,15 @@
 /**
- * Table Of Contents:
+ * Table Of Contents ( global.scss ):
  *
  * 1.0 - Reset
- * 2.0 - Layout
- * 	2.1 - Root
- * 	2.2 - Header
- * 	2.3 - Structure
- * 	2.4 - Footer
- * 3.0 - Typography
- * 4.0 - Elements
- * 5.0 - Forms
- * 5.0 - Navigation
- * 	5.1 - Links
- * 	5.2 - Menus
- * 6.0 - Accessibility
- * 7.0 - Alignments
- * 8.0 - Clearings
- * 9.0 - Widgets
- * 10.0 - Content
- * 	10.1 - Posts and pages
- * 	10.2 - Asides
- * 	10.3 - Comments
- * 11.0 - Infinite scroll
- * 12.0 - Media
- * 	12.1 - Captions
- * 	12.2 - Galleries
+ * 2.0 - Forms
+ * 3.0 - Accessibility
+ * 4.0 - Alignments
+ * 5.0 - Clearings
+ * 6.0 - Infinite scroll
+ * 7.0 - Media
+ * 	7.1 - Captions
+ * 	7.2 - Galleries
  */
 /**
  * 1.0 - Reset
@@ -112,189 +97,7 @@ a img {
   border: 0; }
 
 /**
- * 2.0 Layout
- */
-/* 2.1 Root Elements */
-html {
-  font-size: 10px;
-  -webkit-font-smoothing: antialiased; }
-
-body {
-  height: 100%; }
-
-html,
-body {
-  height: 100%; }
-
-/* 2.2 Header */
-/* 2.3 Structure */
-#page {
-  margin: 0 auto;
-  width: 90%; }
-
-#content:before, #content:after {
-  content: " ";
-  display: table; }
-#content:after {
-  content: "";
-  display: table;
-  clear: both; }
-#content #primary {
-  float: left;
-  width: 70%; }
-#content #secondary {
-  float: right;
-  width: 30%; }
-
-/* 2.4 Footer */
-/**
- * 3.0 Typography
- */
-body,
-button,
-input,
-select,
-textarea {
-  color: #404040;
-  font-family: sans-serif;
-  line-height: 1;
-  font-size: 16px;
-  font-size: 1.6rem; }
-
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-  margin: 0 0 0.5em 0; }
-
-h1,
-h1 a {
-  font-size: 26px;
-  font-size: 2.6rem; }
-
-h2 {
-  font-size: 24px;
-  font-size: 2.4rem; }
-
-h3 {
-  font-size: 22px;
-  font-size: 2.2rem; }
-
-h4 {
-  font-size: 20px;
-  font-size: 2rem; }
-
-h5 {
-  font-size: 18px;
-  font-size: 1.8rem; }
-
-h6 {
-  font-size: 16px;
-  font-size: 1.6rem; }
-
-p {
-  line-height: 1.25;
-  margin-bottom: 1.5em; }
-
-b, strong {
-  font-weight: bold; }
-
-dfn, cite, em, i {
-  font-style: italic; }
-
-blockquote {
-  margin: 0 1.5em; }
-
-address {
-  margin: 0 0 1.5em; }
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6em; }
-
-code, kbd, tt, var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
-
-abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help; }
-
-mark, ins {
-  background: #fff9c0;
-  text-decoration: none; }
-
-sup,
-sub {
-  font-size: 75%;
-  height: 0;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  bottom: 1ex; }
-
-sub {
-  top: .5ex; }
-
-small {
-  font-size: 75%; }
-
-big {
-  font-size: 125%; }
-
-/**
- * 4.0 Elements
- */
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5em; }
-
-ul, ol {
-  margin: 0 0 1.5em 3em; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5em; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 1.5em 1.5em; }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
-
-figure {
-  margin: 0; }
-
-table {
-  margin: 0 0 1.5em;
-  width: 100%; }
-
-th {
-  font-weight: bold; }
-
-/**
- * 5.0 Forms
+ * 2.0 Forms
  */
 button,
 input,
@@ -404,9 +207,302 @@ textarea {
   width: 98%; }
 
 /**
- * 5.0 Navigation
+ * 3.0 Accessibility
  */
-/* 5.1 Links */
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; }
+
+/**
+ * 4.0 Alignments
+ */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+/**
+ * 5.0 Clearings
+ */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: '';
+  display: table; }
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both; }
+
+/**
+ * 6.0 Infinite scroll
+ */
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+  display: block; }
+
+/**
+ * 7.0 Media
+ */
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/* 7.1 Captions */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0 auto; }
+
+.wp-caption-text {
+  text-align: center; }
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0; }
+
+/* 7.2 Galleries */
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%; }
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%; }
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%; }
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%; }
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%; }
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%; }
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%; }
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%; }
+
+/**
+ * Table Of Contents ( layout.scss ):
+ *
+ * 1.0 - Root Elemnets
+ * 2.0 - Structure Elements
+ */
+/* 1.0 Root Elements */
+html {
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  height: 100%; }
+
+html,
+body {
+  height: 100%; }
+
+/* 2.0 Structure Elements */
+#page {
+  margin: 0 auto;
+  width: 90%; }
+
+#content:before, #content:after {
+  content: " ";
+  display: table; }
+#content:after {
+  content: "";
+  display: table;
+  clear: both; }
+#content #primary {
+  float: left;
+  width: 70%; }
+#content #secondary {
+  float: right;
+  width: 30%; }
+
+/**
+ * Table Of Contents ( typography.scss ):
+ *
+ * 1.0 - Typography
+ * 2.0 - Elements
+ */
+/**
+ * 1.0 - Typography
+ */
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both; }
+
+h1,
+h1 a {
+  font-size: 26px;
+  font-size: 2.6rem; }
+
+h2 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 22px;
+  font-size: 2.2rem; }
+
+h4 {
+  font-size: 20px;
+  font-size: 2rem; }
+
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+h6 {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+p {
+  margin-bottom: 1.5em; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+code, kbd, tt, var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  bottom: 1ex; }
+
+sub {
+  top: .5ex; }
+
+small {
+  font-size: 75%; }
+
+big {
+  font-size: 125%; }
+
+/**
+ * 2.0 - Elements
+ */
 a {
   color: royalblue; }
 
@@ -418,7 +514,95 @@ a:focus,
 a:active {
   color: midnightblue; }
 
-/* 5.2 Menus */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+ul, ol {
+  margin: 0 0 1.5em 3em; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 1.5em; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+figure {
+  margin: 0; }
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+th {
+  font-weight: bold; }
+
+/**
+ * Table Of Contents ( content.scss ):
+ *
+ * 1.0 - Single Posts and Pages
+ * 2.0 - Archives
+ * 3.0 - Asides
+ * 4.0 - Comments
+ * 5.0 - Authors
+ */
+/* 1.0 Single Posts and Pages */
+.hentry {
+  margin: 0 0 1.5em; }
+
+.byline,
+.updated {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/* 2.0 Archives */
+/* 3.0 Asides */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/* 4.0 Comments */
+.comment-content a {
+  word-wrap: break-word; }
+
+/* 5.0 Authors */
+/**
+ * Table Of Contents ( navigation.scss ):
+ *
+ * 1.0 - Menus
+ */
+/* 1.0 Menus */
 .main-navigation {
   clear: both;
   display: block;
@@ -488,200 +672,52 @@ a:active {
   width: 50%; }
 
 /**
- * 6.0 Accessibility
+ * @file Widget Styles
  */
-/* Text meant only for screen readers */
-.screen-reader-text {
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important; }
-
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000; }
-
 /**
- * 7.0 Alignments
+ * Table Of Contents ( widgets.scss ):
+ *
+ * 1.0 - Global
+ * 2.0 - Archives
+ * 	2.1 - List
+ * 	2.2 - Dropdown
+ * 3.0 - Calendar
+ * 4.0 - Categories
+ * 	4.1 - List
+ * 	4.2 - Dropdown
+ * 5.0 - Pages
+ * 6.0 - Meta
+ * 7.0 - Recent Comments
+ * 8.0 - Recent Entries
+ * 9.0 - RSS
+ * 10.0 - Search
+ * 11.0 - Text
+ * 12.0 - Tag Cloud
+ * 13.0 - Nav Menu
  */
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin: 0 auto; }
-
-/**
- * 8.0 Clearings
- */
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-  content: '';
-  display: table; }
-
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-  clear: both; }
-
-/**
- * 9.0 Widgets
- */
+/* 1.0 Global Widget Styles */
 .widget {
-  margin: 0 0 1.5em; }
+  margin: 0 0 1em 0;
+  /* Make sure select elements fit in widgets */ }
+  .widget select {
+    max-width: 100%; }
 
-/* Make sure select elements fit in widgets */
-.widget select {
-  max-width: 100%; }
-
-/* Search widget */
-.widget_search .search-submit {
+/* 2.0 Widget Archive */
+/* 2.1 List */
+/* 2.2 Dropdown */
+/* 3.0 Widget Calendar */
+/* 4.0 Widget Categories */
+/* 4.1 List */
+/* 4.2 Dropdown */
+/* 5.0 Widget Pages */
+/* 6.0 Widget Meta */
+/* 7.0 Widget Recent Comments */
+/* 8.0 Widget Recent Entries */
+/* 9.0 Widget RSS */
+/* 10.0 Widget Search */
+.search-form .search-submit {
   display: none; }
 
-/**
- * 10.0 Content
- */
-/* 10.1 Posts and pages */
-.hentry {
-  margin: 0 0 1.5em; }
-
-.byline,
-.updated {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
-
-/* 10.2 Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* 10.3 Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-/**
- * 11.0 Infinite scroll
- */
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .paging-navigation,
-.infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
-  display: none; }
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-.infinity-end.neverending .site-footer {
-  display: block; }
-
-/**
- * 12.0 Media
- */
-.page-content img.wp-smiley,
-.entry-content img.wp-smiley,
-.comment-content img.wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-/* Make sure embeds and iframes fit their containers */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/* 12.1 Captions */
-.wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
-
-.wp-caption img[class*="wp-image-"] {
-  display: block;
-  margin: 0 auto; }
-
-.wp-caption-text {
-  text-align: center; }
-
-.wp-caption .wp-caption-text {
-  margin: 0.8075em 0; }
-
-/* 12.2 Galleries */
-.gallery {
-  margin-bottom: 1.5em; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-
-.gallery-columns-2 .gallery-item {
-  max-width: 50%; }
-
-.gallery-columns-3 .gallery-item {
-  max-width: 33.33%; }
-
-.gallery-columns-4 .gallery-item {
-  max-width: 25%; }
-
-.gallery-columns-5 .gallery-item {
-  max-width: 20%; }
-
-.gallery-columns-6 .gallery-item {
-  max-width: 16.66%; }
-
-.gallery-columns-7 .gallery-item {
-  max-width: 14.28%; }
-
-.gallery-columns-8 .gallery-item {
-  max-width: 12.5%; }
-
-.gallery-columns-9 .gallery-item {
-  max-width: 11.11%; }
+/* 11.0 Widget Text */
+/* 12.0 Widget Tag Cloud */
+/* 13.0 Widget Nav Menu */

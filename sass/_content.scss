@@ -1,0 +1,29 @@
+// @file Content Styles
+
+/**
+ * Table Of Contents ( content.scss ):
+ *
+ * 1.0 - Single Posts and Pages
+ * 2.0 - Archives
+ * 3.0 - Asides
+ * 4.0 - Comments
+ * 5.0 - Authors
+ */
+
+@import "_single";
+@import "_archive";
+
+/* 3.0 Asides */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* 4.0 Comments */
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+}
+
+/* 5.0 Authors */
