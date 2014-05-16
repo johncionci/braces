@@ -1,8 +1,6 @@
 // @file Layout Styles
 
-/**
- * Root Elements
- */
+/* 2.1 Root Elements */
 html {
 	font-size: $base-font-size;
 	-webkit-font-smoothing: antialiased;
@@ -17,9 +15,10 @@ body {
 	height: 100%;
 }
 
-/**
- * Structure Elements
- */
+/* 2.2 Header */
+@import "_header";
+
+/* 2.3 Structure */
 #page {
 	margin: 0 auto;
 	width: 90%;
@@ -37,6 +36,5 @@ body {
 	}
 }
 
-#footer {
-
-}
+/* 2.4 Footer */
+@import "_footer";
