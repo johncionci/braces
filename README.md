@@ -3,7 +3,10 @@ Braces
 
 Braces is a starter theme that is meant for getting development teams up and running on WordPress projects quickly. Braces is derived from [Automattic _s project] (https://github.com/Automattic/_s). _s which is truly fantastic. As you'll likely notice, much of the core beliefs behind _s will be reflected in this project as well.
 
-However, we did make some changes to suit our business needs, which we hope you'll find helpful as well. Some of the new features you can find are [Sass] (http://sass-lang.com) integration, file and structure clean up, and most noticeably, the PHP syntax. Typically any new additions should have README.md docs for their explanations.
+However, we did make some changes to suit our business needs, which we hope you'll find helpful as well. Some of the new features you can find are [Foundation] (http://foundation.zurb.com/docs/) and [Sass] (http://sass-lang.com) integration, file and structure clean up, and most noticeably, the PHP syntax. Typically any new additions should have README.md docs for their explanations.
+
+* Foundation integration is limited to the Grid & Block Grid components of Foundation. We have created a 24 column, 1280px max-width grid to suit the needs of our content publishers that
+have stringent ad placement requirements.
 
 Pull requests are welcome!
 
