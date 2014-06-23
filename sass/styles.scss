@@ -23,6 +23,11 @@
 	@import "preprocess/_placeholders";
 	@import "preprocess/_vars";
 
+// Foundation framework
+	@import "foundation/_settings";
+	@import "foundation/components/_block-grid";
+	@import "foundation/components/_grid";
+
 // Import Styles
 
 	// Global Styles

@@ -4,22 +4,24 @@
  * Structure Elements
  */
 #page {
-	margin: 0 auto;
-	width: 90%;
+	@include grid-row();
+}
+
+#masthead {
+	@include grid-row();
 }
 
 #content {
 	@include clearfix();
+	@include grid-row();
 	#primary {
-		float: left;
-		width: 70%;
+		@include grid-column(18);
 	}
 	#secondary {
-		float: right;
-		width: 30%;
+		@include grid-column(6);
 	}
 }
 
-#footer {
-
+#colophon {
+	@include grid-row();
 }
