@@ -23,10 +23,13 @@ class Sample_Theme_Customizer {
 		* @link http://ottopress.com/2012/how-to-leverage-the-theme-customizer-in-your-own-themes/
 		* @since MyTheme 1.0
 		*/
-		function sample_customize_register($wp_customize){
+		public static function sample_customize_register($wp_customize){
 
-			$wp_customize->add_section('sample_color_scheme', array(
-					'title'    => __('Color Scheme', 'braces'),
+			$wp_customize->add_section( 'company_section', array(
+					'title' => __( 'Company' ),
+					'priority' => 20,
+					'capability' => 'edit_theme_options',
+					'description' => __( 'Provides an easy way for users to add details like phone, email, address, etc. to their theme.' ),
 			));
 
 	}
@@ -34,4 +37,4 @@ class Sample_Theme_Customizer {
 }
 
 // Setup the Theme Customizer settings and controls...
-add_action( 'customize_register' , array( 'Sample_Theme_Customizer' , 'register' ) );
+add_action( 'customize_register' , array( 'Sample_Theme_Customizer' , 'sample_customize_register' ) );

@@ -104,6 +104,7 @@ add_action( 'wp_enqueue_scripts', 'braces_scripts' );
 /**
  * Include WordPress core functionality.
  */
+require get_template_directory() . '/inc/sample-theme-customizer.php';
 
 /* Custom Header */
 require get_template_directory() . '/inc/custom-header.php';
@@ -115,13 +116,15 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /* Customizer additions. */
-require get_template_directory() . '/inc/customizer.php';
+//require get_template_directory() . '/inc/customizer.php';
 
 /* Load Jetpack compatibility file. */
 require get_template_directory() . '/inc/jetpack.php';
 
 /* Load Widgets file. */
 require get_template_directory() . '/inc/widgets.php';
+
+//require get_template_directory() . '/inc/sample-theme-customizer.php';
 
 /**
  * Include WordPress core functionality Extensions.
