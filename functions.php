@@ -123,6 +123,8 @@ require get_template_directory() . '/inc/jetpack.php';
 /* Load Widgets file. */
 require get_template_directory() . '/inc/widgets.php';
 
+require get_template_directory() . '/misc/theme-customizer.php';
+
 /**
  * Include WordPress core functionality Extensions.
  */

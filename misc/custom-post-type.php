@@ -57,7 +57,7 @@ class Braces_Custom_Post_Type {
 			),
 		);
 
-		register_post_type('post_type', $args);
+		register_post_type( 'post_type', $args );
 	}
 }
 
