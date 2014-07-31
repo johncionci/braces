@@ -25,9 +25,9 @@ class Braces_Theme_Customizer {
 			'priority' => 120,
 		));
 
-		//  =============================
-		//  = Text Input                =
-		//  =============================
+		/**
+		 * Text Input
+		 */
 		$wp_customize->add_setting( 'braces_theme_options[text_test]', array(
 			'default'        => 'Arse!',
 			'capability'     => 'edit_theme_options',
@@ -40,9 +40,9 @@ class Braces_Theme_Customizer {
 			'settings'   => 'braces_theme_options[text_test]',
 		) );
 
-		//  =============================
-		//  = Radio Input               =
-		//  =============================
+		/**
+		 * Radio Input
+		 */
 		$wp_customize->add_setting( 'braces_theme_options[color_scheme]', array(
 			'default'        => 'value2',
 			'capability'     => 'edit_theme_options',
@@ -61,9 +61,9 @@ class Braces_Theme_Customizer {
 			),
 		) );
 
-		//  =============================
-		//  = Checkbox                  =
-		//  =============================
+		/**
+		 * Checkbox
+		 */
 		$wp_customize->add_setting( 'braces_theme_options[checkbox_test]', array(
 			'capability' => 'edit_theme_options',
 			'type'       => 'option',
@@ -76,9 +76,9 @@ class Braces_Theme_Customizer {
 			'type'     => 'checkbox',
 		) );
 
-		//  =============================
-		//  = Select Box                =
-		//  =============================
+		/**
+		 * Select Box
+		 */
 		 $wp_customize->add_setting( 'braces_theme_options[header_select]', array(
 			'default'        => 'value2',
 			'capability'     => 'edit_theme_options',
@@ -97,9 +97,9 @@ class Braces_Theme_Customizer {
 			),
 		) );
 
-		//  =============================
-		//  = Image Upload              =
-		//  =============================
+		/**
+		 * Image Upload
+		 */
 		$wp_customize->add_setting( 'braces_theme_options[image_upload_test]', array(
 			'default'        => 'image.jpg',
 			'capability'     => 'edit_theme_options',
@@ -112,9 +112,9 @@ class Braces_Theme_Customizer {
 			'settings' => 'braces_theme_options[image_upload_test]',
 		) ) );
 
-		//  =============================
-		//  = File Upload               =
-		//  =============================
+		/**
+		 * File Upload
+		 */
 		$wp_customize->add_setting( 'braces_theme_options[upload_test]', array(
 			'default'        => 'arse',
 			'capability'     => 'edit_theme_options',
@@ -127,9 +127,9 @@ class Braces_Theme_Customizer {
 			'settings' => 'braces_theme_options[upload_test]',
 		) ) );
 
-		//  =============================
-		//  = Color Picker              =
-		//  =============================
+		/**
+		 * Color Picker
+		 */
 		$wp_customize->add_setting( 'braces_theme_options[link_color]', array(
 			'default'           => '000',
 			'sanitize_callback' => 'sanitize_hex_color',
@@ -143,9 +143,9 @@ class Braces_Theme_Customizer {
 			'settings' => 'braces_theme_options[link_color]',
 		) ) );
 
-		//  =============================
-		//  = Page Dropdown             =
-		//  =============================
+		/**
+		 * Page Dropdown
+		 */
 		$wp_customize->add_setting( 'braces_theme_options[page_test]', array(
 			'capability'     => 'edit_theme_options',
 			'type'           => 'option',
@@ -158,9 +158,9 @@ class Braces_Theme_Customizer {
 			'settings'   => 'braces_theme_options[page_test]',
 		) );
 
-		// =====================
-		//  = Category Dropdown =
-		//  =====================
+		/**
+		 * Category Dropdown
+		 */
 		$categories = get_categories();
 		$cats = array();
 		$i = 0;
@@ -172,16 +172,16 @@ class Braces_Theme_Customizer {
 			$cats[$category->slug] = $category->name;
 		}
 
-		$wp_customize->add_setting( '_s_f_slide_cat', array(
-			'default'        => $default
+		$wp_customize->add_setting( 'braces_theme_options[cat_test]', array(
+			'default'    => $default
 		) );
 
 		$wp_customize->add_control( 'cat_select_box', array(
-			'settings' => '_s_f_slide_cat',
-			'label'   => 'Select Category:',
-			'section'  => '_s_f_home_slider',
-			'type'    => 'select',
-			'choices' => $cats,
+			'settings'   => 'braces_theme_options[cat_test]',
+			'label'      => 'Select Category:',
+			'section'    => 'braces_color_scheme',
+			'type'       => 'select',
+			'choices'    => $cats,
 		) );
 	}
 }
