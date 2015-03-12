@@ -25,13 +25,13 @@ $color-4: #666666;
 $color-5: #f0ad4e;
 $color-6: #d9534f;
 
-$graycale-color-1: #fff;
-$graycale-color-2: #000;
-$graycale-color-3: lighten(#000, 13.5%); // #222
-$graycale-color-4: lighten(#000, 20%);   // #333
-$graycale-color-5: lighten(#000, 33.5%); // #555
-$graycale-color-6: lighten(#000, 46.7%); // #777
-$graycale-color-7: lighten(#000, 93.5%); // #eee
+$grayscale-color-1: #fff;
+$grayscale-color-2: #000;
+$grayscale-color-3: lighten(#000, 13.5%); // #222
+$grayscale-color-4: lighten(#000, 20%);   // #333
+$grayscale-color-5: lighten(#000, 33.5%); // #555
+$grayscale-color-6: lighten(#000, 46.7%); // #777
+$grayscale-color-7: lighten(#000, 93.5%); // #eee
 
 // Font Stacks
 $font-stack-1: Arial, Helvetica, sans-serif;
@@ -86,5 +86,5 @@ $main-navigation-box-shadow-setting: true;
 
 $main-navigation-background-color: $color-4;
 $main-navigation-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-$main-navigation-link-color: $graycale-color-1;
+$main-navigation-link-color: $grayscale-color-1;
 $main-navigation-link-color-hover: $color-3;
